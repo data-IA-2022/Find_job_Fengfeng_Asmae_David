@@ -1,43 +1,231 @@
-,Intitulé du poste,Date de publication,lieu,competences,Nom de la société,Type de contrat,salaire_minimum,salaire_maximum
-5,data analyst,2022-12-31,maisons alfort,"support, sql, data, management, business, objects, t-sql",fed it,cdd,45000.0,50000.0
-7,data analyst,2022-12-18,paris,"data, management, business, intelligence, bases, de, données",fed it,cdi,60000.0,62000.0
-14,data scientist,2022-12-18,rueil malmaison,"marketing, data, management, support",fed it,cdi,60000.0,65000.0
-16,consultant,2023-01-13,paris,"big, data, oracle, cloud, sap, python",selescope,,60000.0,70000.0
-19,chef de projet,2023-01-10,gennevilliers,"marketing, outils, digital, ux, mobile",hays france,cdi,60000.0,70000.0
-21,data scientist,2023-01-15,boulogne-billancourt,"si, data, management, data, quality, méthodologie, outils",michael page,cdi,55000.0,60000.0
-24,business analyst,2022-12-17,suresnes,"business, intelligence, crm, intelligence, artificielle, système, réseau",selescope,,70000.0,100000.0
-25,business analyst,2022-12-27,suresnes,"intelligence, artificielle, business, intelligence, crm, système, réseau",selescope,,70000.0,100000.0
-28,business analyst,2013-01-14,rueil malmaison,"business, intelligence, marketing, intelligence, artificielle",fed it,cdi,35000.0,45000.0
-38,data scientist,2022-12-17,paris,"machine, learning, méthodologie, agile",key consulting,cdi,45000.0,70000.0
-43,business analyst,2022-12-29,paris,"recette, si, big, data, intelligence, artificielle",mr search,cdi,50000.0,80000.0
-53,chef de projet,2022-12-25,paris,agile,nexton consulting,cdi,30000.0,60000.0
-65,data analyst,2022-12-31,maisons alfort,"support, sql, data, management, business, objects, t-sql",fed it,cdd,45000.0,50000.0
-67,data analyst,2022-12-18,paris,"data, management, business, intelligence, bases, de, données",fed it,cdi,60000.0,62000.0
-74,data scientist,2022-12-18,rueil malmaison,"marketing, data, management, support",fed it,cdi,60000.0,65000.0
-76,consultant,2023-01-13,paris,"big, data, oracle, cloud, sap, python",selescope,,60000.0,70000.0
-79,chef de projet,2023-01-10,gennevilliers,"marketing, outils, digital, ux, mobile",hays france,cdi,60000.0,70000.0
-95,engineer,2013-01-14,paris,"sécurité, securité, réseaux, lan, support",uniware global services,cdi,45000.0,60000.0
-97,engineer,2013-01-14,neuilly sur seine,"devops, jenkins, outils, linux, infrastructure",uniware global services,cdi,42000.0,60000.0
-98,engineer,2013-01-14,neuilly sur seine,"support, vmware, python, javascript, securité",uniware global services,cdi,40000.0,55000.0
-101,data scientist,2023-01-08,lisses,"support, communication, big, data, cloud, hadoop",fed it,cdi,57000.0,62000.0
-102,engineer,2013-01-14,neuilly sur seine,"vmware, support, windows, microsoft, système",uniware global services,cdi,40000.0,55000.0
-104,engineer,2013-01-14,paris,"cloud, saas, paas, iaas, infrastructure",uniware global services,cdi,40000.0,60000.0
-108,engineer,2013-01-14,paris,"windows, unix, cft, réseaux, outils",uniware global services,cdi,40000.0,60000.0
-109,engineer,2013-01-14,paris,"réseau, cisco, réseaux, sécurité, securité",uniware global services,cdi,40000.0,60000.0
-125,engineer,2023-01-12,paris,"middleware, support, infrastructure, optimisation, python",uniware global services,cdi,45000.0,60000.0
-126,architect,2023-01-12,paris,"infrastructure, support, si, système",uniware global services,cdi,40000.0,60000.0
-127,engineer,2023-01-12,paris,"cloud, support, python, paas, securité",uniware global services,cdi,38000.0,56000.0
-139,architect,2013-01-14,paris,"poste, de, travail, microsoft, support, cloud, infrastructure",uniware global services,cdi,50000.0,70000.0
-140,engineer,2023-01-12,paris,"cloud, securité, devops, sécurité, si",uniware global services,cdi,50000.0,60000.0
-141,engineer,2023-01-12,paris,"réseaux, sécurité, securité, infrastructure, wan",uniware global services,cdi,38000.0,55000.0
-144,engineer,2023-01-12,paris,"linux, unix, windows, hp, infrastructure",uniware global services,cdi,38000.0,55000.0
-147,engineer,2022-12-26,paris,"devops, outils, linux, infrastructure, jenkins",uniware global services,cdi,40000.0,60000.0
-149,engineer,2013-01-14,neuilly-sur-seine,"cloud, devops, sécurité, securité, sql, server",uniware global services,cdi,45000.0,60000.0
-153,developer,2022-12-25,paris 09 (75),"java, j2ee, web, jboss, sécurité",synchrone,cdi,45000.0,65000.0
-156,engineer,2013-01-14,neuilly sur seine,"cloud, web, devops, python, infrastructure",uniware global services,cdi,40000.0,60000.0
-158,developer,2022-12-25,paris 09 (75),"angularjs, agile, web, framework, outils",synchrone,cdi,30000.0,50000.0
-163,expert,2013-01-14,paris,"middleware, weblogic, unix, support, tomcat",uniware global services,cdi,40000.0,60000.0
-174,engineer,2023-01-12,paris,"linux, unix, système, infrastructure, support",uniware global services,cdi,38000.0,55000.0
-180,data scientist,2022-12-18,paris,"web, spring, si, sécurité, digital",mr search,cdi,65000.0,70000.0
-208,engineer,2022-12-18,nanterre,"système, windows, microsoft, cloud, maintenance",experteam,cdi,45000.0,55000.0
-228,data scientist,2022-12-30,neuilly sur seine,"nosql, unix, java, machine, learning, linux",beezen,cdi,38000.0,50000.0
+,Intitulé du poste,Date de publication,lieu,competences,salaire_minimum,salaire_maximum,Nom de la société,Type de contrat
+0,data analyst,2022-12-25,paris,sql t-sql outils,,,sept lieues sas,cdi
+1,data analyst,2022-12-18,"paris, la défense",support outils agile design big data,,,edf france,cdi
+2,data analyst,2022-12-19,paris,crm data quality sql sas python,,,hermès,cdi
+3,data analyst,2022-12-25,moussy-le-vieux,si support sap,,,tereos,cdi
+4,data analyst,2023-01-12,france,outils support decisionnel sql test,,,safran-group,cdi
+5,data analyst,2022-12-31,maisons alfort,support sql data management business objects t-sql,45000.0,50000.0,fed it,cdd
+6,data analyst,2022-12-18,paris,cloud paas qlik iaas support,,,cegid,cdi
+7,data analyst,2022-12-18,paris,data management business intelligence bases de données,60000.0,62000.0,fed it,cdi
+8,business analyst,2023-01-15,paris,crm agile decisionnel réseaux réseau,,,credit agricole,cdi
+9,data analyst,2023-01-02,rueil-malmaison,big data scrum intelligence artificielle electronique maintenance,,,vinci,stage
+10,data analyst,2023-01-02,paris,mobile marketing outils t-sql sql,,,paris&co,cdi
+11,data scientist,2023-01-01,la defense,sas téléphonie serveur communication,,,société générale,cdi
+12,data scientist,2023-01-12,suresnes,digital outils cloud webmarketing marketing,,,fyte,cdi
+13,data analyst,2023-01-01,saint-ouen,outils marketing digital machine learning python,,,groupe engie,cdi
+14,data scientist,2022-12-18,rueil malmaison,marketing data management support,60000.0,65000.0,fed it,cdi
+15,engineer,2023-01-06,puteaux,sécurité securité si réseau outils,,,i-tracing,cdi
+16,consultant,2023-01-13,paris,big data oracle cloud sap python,60000.0,70000.0,selescope,
+17,data engineer,2023-01-13,paris,big data python support intelligence artificielle hadoop,,,banque de france,cdi
+18,data scientist,2023-01-01,fontenay-sous-bois,data quality marketing,,,société générale,cdi
+19,chef de projet,2023-01-10,gennevilliers,marketing outils digital ux mobile,60000.0,70000.0,hays france,cdi
+20,data engineer,2022-12-24,paris,scala data quality edge python big data,,,paris&co,cdi
+21,data scientist,2023-01-15,boulogne-billancourt,si data management data quality méthodologie outils,55000.0,60000.0,michael page,cdi
+22,engineer,2022-12-21,saint-germain-en-laye,big data bases de données nosql système decisionnel,,,trimane,stage
+23,data scientist,2022-12-25,saint-germain-en-laye,big data business intelligence machine learning outils nosql,,,trimane,stage
+24,business analyst,2022-12-17,suresnes,business intelligence crm intelligence artificielle système réseau,70000.0,100000.0,selescope,
+25,business analyst,2022-12-27,suresnes,intelligence artificielle business intelligence crm système réseau,70000.0,100000.0,selescope,
+26,business analyst,2013-01-14,la défense,si multimédia acquisition télécoms,,,modis,cdi
+27,data engineer,2022-12-18,"paris, la défense",outils big data python devops agile,,,edf france,cdi
+28,business analyst,2013-01-14,rueil malmaison,business intelligence marketing intelligence artificielle,35000.0,45000.0,fed it,cdi
+29,engineer,2023-01-10,ile-de-france,big data intelligence artificielle nosql python hadoop,,,direct energie,stage
+30,data scientist,2023-01-01,paris,seo communication network access rails,,,careerbuilder.com,cdi
+31,data scientist,2023-01-02,ile de france,support wan windows outils exchange,,,umanis,cdi
+32,data scientist,2023-01-06,rueil-malmaison,communication support database crm access,,,société générale,cdi
+33,business analyst,2022-12-24,ile de france,agile si support devops sql,,,societe general,cdi
+34,data scientist,2022-12-25,"paris, la défense",outils big data si réseau securité,,,edf france,contratdeprofessionnalisation
+35,data scientist,2023-01-06,val-de-marne,hadoop machine learning outils bases de données sql,,,societe general,cdi
+36,data scientist,2022-12-24,paris,sql python scala t-sql edge,,,paris&co,cdi
+37,data scientist,2022-12-24,paris,sql python scala t-sql edge,,,paris&co,cdi
+38,data scientist,2022-12-17,paris,machine learning méthodologie agile,45000.0,70000.0,key consulting,cdi
+39,data analyst,2013-01-14,la defense,outils perl vba test data management,,,société générale,cdi
+40,data analyst,2023-01-08,massy,digital outils e-commerce marketing internet,,,carrefour,cdi
+41,data scientist,2022-12-24,fontenay-sous-bois,data quality big data devops flex decisionnel,,,société générale,cdi
+42,engineer,2023-01-13,paris,sécurité securité blockchain devops design,,,cap fi technology,cdi
+43,business analyst,2022-12-29,paris,recette si big data intelligence artificielle,50000.0,80000.0,mr search,cdi
+44,business analyst,2023-01-13,noisiel,sap sas informatica business intelligence microsoft,,,banque de france,cdi
+45,consultant,2022-12-25,île-de-france,cognos etl ibm framework outils,,,trimane,cdi
+46,data scientist,2022-12-24,la defense,python framework tensorflow agile intelligence artificielle,,,société générale,cdi
+47,data scientist,2023-01-06,saint-ouen,big data java data management support javascript,,,danone,cdi
+48,data analyst,2022-12-24,île-de-france,microsoft outils sql server sql securité,,,engie,cdi
+49,data scientist,2022-12-31,colombes,si data management digital,,,société générale,cdi
+50,data scientist,2022-12-18,levallois-perret,sas,,,uti group,cdi
+51,expert,2022-12-31,hauts-de-seine,data management si securité outils sécurité,,,societe general,cdi
+52,expert,2022-12-26,la defense,data management si securité outils big data,,,société générale,cdi
+53,chef de projet,2022-12-25,paris,agile,30000.0,60000.0,nexton consulting,cdi
+54,data scientist,2022-12-26,la defense,data management si securité outils big data,,,société générale,cdi
+55,data engineer,2022-12-18,paris,marketing hadoop crm java python,,,seloger,cdi
+56,data scientist,2022-12-26,courbevoie,vba système,,,groupe engie,cdi
+57,engineer,2022-12-24,massy,test big data recette outils communication,,,carrefour,stage
+58,architect,2022-12-22,levallois-perret,si web salesforce infrastructure cloud,,,edifixio,cdi
+59,chef de projet,2022-12-18,boulogne-billancourt,web recette digital marketing data management,,,federation francaise de tennis,cdi
+60,data analyst,2022-12-25,paris,sql t-sql outils,,,sept lieues sas,cdi
+61,data analyst,2022-12-18,"paris, la défense",support outils agile design big data,,,edf france,cdi
+62,data analyst,2022-12-19,paris,crm data quality sql sas python,,,hermès,cdi
+63,data analyst,2022-12-25,moussy-le-vieux,si support sap,,,tereos,cdi
+64,data analyst,2023-01-12,france,outils support decisionnel sql test,,,safran-group,cdi
+65,data analyst,2022-12-31,maisons alfort,support sql data management business objects t-sql,45000.0,50000.0,fed it,cdd
+66,data analyst,2022-12-18,paris,cloud paas qlik iaas support,,,cegid,cdi
+67,data analyst,2022-12-18,paris,data management business intelligence bases de données,60000.0,62000.0,fed it,cdi
+68,business analyst,2023-01-15,paris,crm agile decisionnel réseaux réseau,,,credit agricole,cdi
+69,data analyst,2023-01-02,rueil-malmaison,big data scrum intelligence artificielle electronique maintenance,,,vinci,stage
+70,data analyst,2023-01-02,paris,mobile marketing outils t-sql sql,,,paris&co,cdi
+71,data scientist,2023-01-01,la defense,sas téléphonie serveur communication,,,société générale,cdi
+72,data scientist,2023-01-12,suresnes,digital outils cloud webmarketing marketing,,,fyte,cdi
+73,data analyst,2023-01-01,saint-ouen,outils marketing digital machine learning python,,,groupe engie,cdi
+74,data scientist,2022-12-18,rueil malmaison,marketing data management support,60000.0,65000.0,fed it,cdi
+75,engineer,2023-01-06,puteaux,sécurité securité si réseau outils,,,i-tracing,cdi
+76,consultant,2023-01-13,paris,big data oracle cloud sap python,60000.0,70000.0,selescope,
+77,data engineer,2023-01-13,paris,big data python support intelligence artificielle hadoop,,,banque de france,cdi
+78,data scientist,2023-01-01,fontenay-sous-bois,data quality marketing,,,société générale,cdi
+79,chef de projet,2023-01-10,gennevilliers,marketing outils digital ux mobile,60000.0,70000.0,hays france,cdi
+80,engineer,2023-01-06,puteaux,securité sécurité cloud si iaas,,,i-tracing,cdi
+81,data scientist,2023-01-15,paris,data quality sas système méthodologie support,,,banque de france,cdi
+82,data scientist,2022-12-24,fontenay-sous-bois,web javascript open source d3 angularjs,,,société générale,cdi
+83,architect,2023-01-06,puteaux,securité sécurité cloud si iaas,,,i-tracing,cdi
+84,developer,2022-12-22,levallois-perret,si web infrastructure cloud salesforce,,,edifixio,cdi
+85,consultant,2022-12-22,levallois-perret,si cloud salesforce web infrastructure,,,edifixio,cdi
+86,chef de projet,2023-01-11,gentilly,t-sql recette sql database maintenance,,,chronopost sas,
+87,business analyst,2023-01-09,tremblay-en-france,big data decisionnel système support business intelligence,,,air france,contratd'apprentissage
+88,data scientist,2023-01-13,neuilly-sur-seine,digital support sql outils marketing,,,groupe m6,cdi
+89,developer,2022-12-22,france,si web salesforce infrastructure html5,,,edifixio,cdi
+90,data scientist,2023-01-08,guyancourt (78) face gare de st quentin en yveline,maintenance support securité réseaux cloud,,,spie ics,cdi
+91,expert,2022-12-25,moussy-le-vieux,si talend data management support test,,,tereos,cdi
+92,data analyst,2022-12-18,saint-ouen,outils support video decisionnel data management,,,danone,cdi
+93,data scientist,2022-12-29,île-de-france,sql data lab machine learning support big data,,,safran-group,cdi
+94,consultant,2023-01-04,paris,internet support support applicatif design moe,,,criteo,cdi
+95,engineer,2013-01-14,paris,sécurité securité réseaux lan support,45000.0,60000.0,uniware global services,cdi
+96,business analyst,2022-12-24,ile-de-france,agile scrum moa progiciel système,,,natixis,cdi
+97,engineer,2013-01-14,neuilly sur seine,devops jenkins outils linux infrastructure,42000.0,60000.0,uniware global services,cdi
+98,engineer,2013-01-14,neuilly sur seine,support vmware python javascript securité,40000.0,55000.0,uniware global services,cdi
+99,engineer,2023-01-10,ile-de-france,qlik agile qlikview sql support,,,direct energie,cdi
+100,data scientist,2022-12-19,paris,digital big data machine learning intelligence artificielle bases de données,,,business & decision,cdi
+101,data scientist,2023-01-08,lisses,support communication big data cloud hadoop,57000.0,62000.0,fed it,cdi
+102,engineer,2013-01-14,neuilly sur seine,vmware support windows microsoft système,40000.0,55000.0,uniware global services,cdi
+103,consultant,2022-12-18,saint-germain-en-laye,business intelligence big data java outils sql,,,trimane,cdi
+104,engineer,2013-01-14,paris,cloud saas paas iaas infrastructure,40000.0,60000.0,uniware global services,cdi
+105,data scientist,2022-12-30,le plessis-robinson,lattice python aix design,,,cs communication & systèmes,cdi
+106,data scientist,2022-12-26,fontenay-sous-bois,outils si langage big data python,,,société générale,cdi
+107,business analyst,2023-01-02,fontenay-sous-bois,agile data quality big data data management méthodologie,,,société générale,cdi
+108,engineer,2013-01-14,paris,windows unix cft réseaux outils,40000.0,60000.0,uniware global services,cdi
+109,engineer,2013-01-14,paris,réseau cisco réseaux sécurité securité,40000.0,60000.0,uniware global services,cdi
+110,data analyst,2023-01-15,france - antony (92) - ile de france,sap qlikview etl talend qlik,,,n/a,
+111,chef de projet,2022-12-18,paris,si moa moe agile outils,,,caisse des depots,cdi
+112,data scientist,2023-01-12,vélizy-villacoublay,securité sécurité réseaux communication outils,,,thales services s.a.s.,
+113,data scientist,2022-12-18,paris,machine learning less big data hadoop exchange,,,criteo,cdi
+114,data scientist,2022-12-30,fontenay-sous-bois,si data management méthodologie outils machine learning,,,société générale,cdi
+115,data scientist,2023-01-13,poissy,marketing python java intelligence artificielle système,,,groupe psa,cdi
+116,architect,2022-12-29,île-de-france,big data outils système hadoop scala,,,safran-group,cdi
+117,data scientist,2022-12-29,île-de-france,sql data lab machine learning big data scala,,,safran-group,cdi
+118,consultant,2022-12-18,île-de-france,big data qlik outils business intelligence,,,trimane,cdi
+119,data scientist,2022-12-18,paris,maintenance communication infrastructure design,,,amazon,cdi
+120,developer,2022-12-19,paris 9ème (75),vba web langage t-sql sql,30000.0,50000.0,synchrone,cdi
+121,business analyst,2022-12-18,courbevoie,java infrastructure angularjs devops big data,,,n/a,
+122,business analyst,2022-12-24,île-de-france,test recette validation mobile moa,,,infotel,cdi
+123,consultant,2022-12-18,île-de-france,talend moa recette optimisation outils,,,trimane,cdi
+124,engineer,2022-12-24,paris,php php5 javascript angularjs symfony,,,infotel,cdi
+125,engineer,2023-01-12,paris,middleware support infrastructure optimisation python,45000.0,60000.0,uniware global services,cdi
+126,architect,2023-01-12,paris,infrastructure support si système,40000.0,60000.0,uniware global services,cdi
+127,engineer,2023-01-12,paris,cloud support python paas securité,38000.0,56000.0,uniware global services,cdi
+128,data scientist,2023-01-05,la defense,big data marketing méthodologie communication,,,société générale,cdi
+129,data scientist,2022-12-24,la defense,si decisionnel data quality,,,société générale,cdi
+130,data scientist,2022-12-29,île-de-france,bases de données outils linux big data python,,,safran-group,cdi
+131,consultant,2022-12-18,île-de-france,cognos framework etl big data outils,,,trimane,cdi
+132,expert,2023-01-01,paray vieille poste,sécurité securité outils windows communication,,,ergalis,cdd
+133,data scientist,2022-12-29,île-de-france,support data management big data bases de données,,,safran-group,stage
+134,data scientist,2022-12-21,pantin,outils digital plm support moa,,,hermès,cdi
+135,engineer,2022-12-29,île-de-france,electronique outils validation data management,,,safran-group,stage
+136,chef de projet,2022-12-19,paris,moa si crm support agile,,,groupama,cdi
+137,developer,2022-12-22,île-de-france,python maintenance support sécurité big data,,,engie,cdi
+138,data scientist,2023-01-08,colombes,marketing si support data management réseau,,,société générale,cdi
+139,architect,2013-01-14,paris,poste de travail microsoft support cloud infrastructure,50000.0,70000.0,uniware global services,cdi
+140,engineer,2023-01-12,paris,cloud securité devops sécurité si,50000.0,60000.0,uniware global services,cdi
+141,engineer,2023-01-12,paris,réseaux sécurité securité infrastructure wan,38000.0,55000.0,uniware global services,cdi
+142,engineer,2022-12-18,paris,digital devops web android open source,,,kisio,cdi
+143,engineer,2023-01-01,île-de-france,electronique outils validation data management,,,safran-group,stage
+144,engineer,2023-01-12,paris,linux unix windows hp infrastructure,38000.0,55000.0,uniware global services,cdi
+145,data scientist,2022-12-19,courbevoie,support cloud network linux windows,,,amazon,cdi
+146,engineer,2023-01-12,paris,linux devops infrastructure mongodb apache,,,uniware global services,cdi
+147,engineer,2022-12-26,paris,devops outils linux infrastructure jenkins,40000.0,60000.0,uniware global services,cdi
+148,data scientist,2022-12-18,palaiseau,réseau si infrastructure réseaux big data,,,edf france,contratdeprofessionnalisation
+149,engineer,2013-01-14,neuilly-sur-seine,cloud devops sécurité securité sql server,45000.0,60000.0,uniware global services,cdi
+150,engineer,2022-12-25,paris,intelligence artificielle outils réseaux machine learning big data,,,iliad-free,cdi
+151,data analyst,2022-12-19,paris,digital web outils javascript recette,,,business & decision,cdi
+152,chef de projet,2022-12-26,seine-saint-denis,crm web marketing design pack office,,,printemps,cdi
+153,developer,2022-12-25,paris 09 (75),java j2ee web jboss sécurité,45000.0,65000.0,synchrone,cdi
+154,data scientist,2022-12-29,palaiseau,outils python langage si git,,,edf france,stage
+155,developer,2023-01-06,chatillon,cloud si iaas windows saas,,,orange,
+156,engineer,2013-01-14,neuilly sur seine,cloud web devops python infrastructure,40000.0,60000.0,uniware global services,cdi
+157,chef de projet,2022-12-18,paris,outils decisionnel support business objects business intelligence,,,tf1,cdi
+158,developer,2022-12-25,paris 09 (75),angularjs agile web framework outils,30000.0,50000.0,synchrone,cdi
+159,chef de projet,2023-01-15,boulogne-billancourt,réseaux sociaux réseaux outils acquisition jquery,,,francaise des jeux,stage
+160,engineer,2022-12-30,fontenay-sous-bois,si java support angularjs outils,,,société générale,cdi
+161,developer,2022-12-18,paris,digital ios android swift web,,,kisio,cdi
+162,developer,2022-12-18,paris 20 rue hector malot (75-hec),digital c++ devops python web,,,kisio,cdi
+163,expert,2013-01-14,paris,middleware weblogic unix support tomcat,40000.0,60000.0,uniware global services,cdi
+164,expert,2022-12-22,ile-de-france,si sécurité data management securité réseau,,,grtgaz,cdi
+165,consultant,2022-12-19,paris,sas digital dataiku,,,business & decision,cdi
+166,data engineer,2022-12-29,île-de-france,support python sql hadoop big data,,,safran-group,stage
+167,data scientist,2023-01-08,ile de france,plm outils système cloud communication,,,dassault aviation,stage
+168,architect,2022-12-18,paris,outils swift android si unix,,,paris&co,cdi
+169,data analyst,2022-12-21,saint-ouen,support sap cloud agile middleware,,,danone,cdi
+170,data scientist,2022-12-18,paris,marketing iaas paas saas,,,cegid,stage
+171,data scientist,2023-01-05,fontenay-sous-bois,hadoop agile maintenance scala système,,,société générale,cdi
+172,consultant,2023-01-02,île-de-france,cloud unix aix ux support,,,vinci,cdi
+173,chef de projet,2023-01-15,paris,marketing optimisation c exchange digital,,,cdiscount,cdi
+174,engineer,2023-01-12,paris,linux unix système infrastructure support,38000.0,55000.0,uniware global services,cdi
+175,engineer,2022-12-29,île-de-france,test linux windows sécurité securité,,,safran-group,cdi
+176,engineer,2022-12-18,paris 20 rue hector malot (75-hec),digital support devops web android,,,kisio,cdi
+177,data scientist,2022-12-24,la defense,communication outils digital,,,société générale,cdi
+178,business analyst,2023-01-09,paris,marketing digital agile outils database,,,air france,contratd'apprentissage
+179,engineer,2022-12-29,île-de-france,outils qt c++ linux windows,,,safran-group,cdi
+180,data scientist,2022-12-18,paris,web spring si sécurité digital,65000.0,70000.0,mr search,cdi
+181,engineer,2023-01-01,bagneux,java support outils c++ système,,,naval group,cdi
+182,data scientist,2022-12-18,nanterre,réseau machine learning outils sas big data,,,edf france,contratdeprofessionnalisation
+183,engineer,2022-12-25,saint-germain-en-laye,java outils decisionnel t-sql sql,,,trimane,stage
+184,data analyst,2023-01-02,île-de-france,sap communication outils business intelligence système,,,vinci,cdi
+185,data scientist,2023-01-09,fontenay-sous-bois,",",,,société générale,cdi
+186,data scientist,2023-01-05,vélizy-villacoublay,outils système,,,groupe psa,cdi
+187,expert,2022-12-29,la defense,digital communication support réseau,,,société générale,cdi
+188,engineer,2022-12-18,paris,iaas paas saas système progiciel,,,cegid,cdi
+189,data scientist,2022-12-29,île-de-france,test support,,,safran-group,stage
+190,engineer,2023-01-07,île-de-france,sécurité securité c++ réseaux validation,,,safran-group,cdi
+191,data scientist,2023-01-01,bagneux,java système serveur outils uml,,,naval group,cdi
+192,chef de projet,2022-12-26,ile-de-france,recette outils e-commerce support,,,printemps,cdi
+193,chef de projet,2022-12-26,paris,recette e-commerce outils marketing support,,,printemps,cdi
+194,data scientist,2023-01-01,bagneux,java système,,,naval group,cdi
+195,data scientist,2023-01-15,ile-de-france,support outils progiciel si sécurité,,,natixis,cdi
+196,engineer,2023-01-02,nanterre,communication agile si réseau securité,,,vinci,cdi
+197,data scientist,2023-01-02,saint-denis,support sap windows communication itil,,,vinci,cdi
+198,data scientist,2023-01-05,la defense,outils design si marketing illustrator,,,société générale,cdi
+199,data scientist,2023-01-01,bagneux,c++ c java système support,,,naval group,cdi
+200,data scientist,2023-01-13,fontenay-sous-bois,sécurité securité réseaux infrastructure firewall,,,société générale,cdi
+201,expert,2022-12-24,ile-de-france,support recette sql maintenance outils,,,natixis,cdi
+202,developer,2022-12-30,courbevoie,agile sql support python bootstrap,,,société générale,cdi
+203,data scientist,2022-12-24,fontenay-sous-bois,agile sql support python bootstrap,,,société générale,cdi
+204,data scientist,2022-12-25,la defense,sécurité securité communication méthodologie,,,société générale,cdi
+205,data scientist,2013-01-14,nozay,cloud réseaux système infrastructure c++,,,nokia,cdi
+206,developer,2023-01-02,la defense,agile sql support python bootstrap,,,société générale,cdi
+207,developer,2022-12-24,la defense,agile sql support python bootstrap,,,société générale,cdi
+208,engineer,2022-12-18,nanterre,système windows microsoft cloud maintenance,45000.0,55000.0,experteam,cdi
+209,developer,2022-12-24,ile-de-france,java soa json si git,,,natixis,cdi
+210,data scientist,2023-01-01,bagneux,système uml outils java xml,,,naval group,cdi
+211,developer,2022-12-24,ile-de-france,outils .net vba c# windows,,,natixis,cdi
+212,architect,2022-12-24,fontenay-sous-bois,si securité sécurité big data cloud,,,société générale,cdi
+213,data scientist,2022-12-25,fontenay-sous-bois,si java support big data agile,,,société générale,cdi
+214,consultant,2022-12-23,nanterre,sap si moa informatica maintenance,,,aladium,cdd
+215,architect,2023-01-01,bagneux,securité sécurité système réseaux,,,naval group,cdi
+216,developer,2022-12-24,la defense,outils web si sql sql server,,,société générale,cdi
+217,data scientist,2023-01-01,bagneux,c++ java système c test,,,naval group,cdi
+218,architect,2023-01-01,bagneux,système support validation securité outils,,,naval group,cdi
+219,expert,2023-01-12,fontenay-sous-bois,sécurité si support securité réseaux,,,société générale,cdi
+220,expert,2022-12-29,la defense,python support shell sécurité linux,,,société générale,cdi
+221,business analyst,2022-12-29,île-de-france,sap outils système si business intelligence,,,safran-group,cdi
+222,data scientist,2023-01-01,bagneux,système outils sécurité support securité,,,naval group,cdi
+223,architect,2023-01-15,paris,outils si sécurité support securité,,,ramsay,cdi
+224,chef de projet,2023-01-02,ile-de-france,réseaux securité blockchain sécurité big data,,,natixis,cdi
+225,developer,2022-12-19,saint-ouen,sap abap progiciel système support,,,groupe engie,cdi
+226,architect,2023-01-12,paris,digital outils securité sécurité t-sql,,,groupe engie,cdi
+227,data scientist,2023-01-15,boulogne-billancourt,test serveur jquery mobile tdd,,,francaise des jeux,cdi
+228,data scientist,2022-12-30,neuilly sur seine,nosql unix java machine learning linux,38000.0,50000.0,beezen,cdi
+229,data scientist,2023-01-12,saint-ouen,big data support python réseaux securité,,,groupe engie,cdi
