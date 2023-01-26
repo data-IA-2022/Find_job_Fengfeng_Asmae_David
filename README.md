@@ -7,3 +7,4 @@
     - certaines approximations dans le formatage des colonnes notamment pour "Intitulé du poste"
     - Modèle retenue : Random forest regressor
     - metrique d'erreur : r²_score
+    - implémentation d'un pipeline pour l'entraînement du modèle de regression
