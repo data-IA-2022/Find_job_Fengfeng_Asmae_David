@@ -8,3 +8,12 @@
     - Modèle retenue : Random forest regressor
     - metrique d'erreur : r²_score
     - implémentation d'un pipeline pour l'entraînement du modèle de regression
+
+### Description des fichiers : 
+    - clean_data.csv : dataset nettoyé utilisé pour l'entraînement du modèle de machine learning
+    - data.json : dataset brute
+    - Find_job_Cleaning : Nettoyage du dataset brute
+    - Find_job_Explo : Exploration des données
+    - Find_job_Modele : Entraînement du modèle définitif
+    - Find_job_Linear_regression : Premier modèle de regression linéaire entraîné, performances décevantes
+    - optimize_model.txt : contient les meilleurs résultats de l'optimization des paramètres de l'algo Random Forest Regressor  

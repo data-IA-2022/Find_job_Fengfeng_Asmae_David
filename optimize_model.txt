@@ -1,0 +1,24 @@
+Recherche des meilleurs paramètres en utilisant RandomizedSearchCv et GridSearchCV
+
+RFR: 0.70397
+best params :  {'random_state': 4, 'n_estimators': 88, 'criterion': 'absolute_error'}
+RFR: 0.66027
+best params :  {'random_state': 97, 'n_estimators': 27, 'criterion': 'poisson'}
+
+RFR: 0.76794
+best params :  {'random_state': 46, 'n_estimators': 86, 'criterion': 'poisson'}
+RFR: 0.64032
+best params :  {'random_state': 10, 'n_estimators': 68, 'criterion': 'poisson'}
+
+RFR: 0.72484
+best params :  {'random_state': 99, 'n_estimators': 23, 'criterion': 'absolute_error'}
+
+RFR: 0.72599
+best params :  {'random_state': 52, 'n_estimators': 23, 'criterion': 'poisson'}
+
+
+Meilleure combinaison de paramètres : 
+RFR: 0.86616
+best params :  {'random_state': 66, 'n_estimators': 26, 'criterion': 'absolute_error'}
+RFR: 0.83544
+best params :  {'random_state': 40, 'n_estimators': 9, 'criterion': 'friedman_mse'}
