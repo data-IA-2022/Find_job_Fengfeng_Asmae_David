@@ -1,44 +1,44 @@
 ,Intitulé du poste,Date de publication,lieu,competences,salaire_minimum,salaire_maximum,Nom de la société,Type de contrat
-5,data analyst,2022-12-31,maisons alfort,support sql data management business objects t-sql,45000.0,50000.0,fed it,cdd
-7,data analyst,2022-12-18,paris,data management business intelligence bases de données,60000.0,62000.0,fed it,cdi
-14,data scientist,2022-12-18,rueil malmaison,marketing data management support,60000.0,65000.0,fed it,cdi
-16,consultant,2023-01-13,paris,big data oracle cloud sap python,60000.0,70000.0,selescope,
-19,chef de projet,2023-01-10,gennevilliers,marketing outils digital ux mobile,60000.0,70000.0,hays france,cdi
-21,autres,2023-01-15,boulogne-billancourt,si data management data quality méthodologie outils,55000.0,60000.0,michael page,cdi
-24,business analyst,2022-12-17,suresnes,business intelligence crm intelligence artificielle système réseau,70000.0,100000.0,selescope,
-25,business analyst,2022-12-27,suresnes,intelligence artificielle business intelligence crm système réseau,70000.0,100000.0,selescope,
-28,business analyst,2013-01-14,rueil malmaison,business intelligence marketing intelligence artificielle,35000.0,45000.0,fed it,cdi
-38,data scientist,2022-12-17,paris,machine learning méthodologie agile,45000.0,70000.0,key consulting,cdi
-43,business analyst,2022-12-29,paris,recette si big data intelligence artificielle,50000.0,80000.0,mr search,cdi
+5,data analyst,2022-12-31,maisons alfort,"support, sql, data management, business objects, t-sql",45000.0,50000.0,fed it,cdd
+7,data analyst,2022-12-18,paris,"data management, business intelligence, bases de données",60000.0,62000.0,fed it,cdi
+14,data scientist,2022-12-18,rueil malmaison,"marketing, data management, support",60000.0,65000.0,fed it,cdi
+16,consultant,2023-01-13,paris,"big data, oracle, cloud, sap, python",60000.0,70000.0,selescope,
+19,chef de projet,2023-01-10,gennevilliers,"marketing, outils, digital, ux, mobile",60000.0,70000.0,hays france,cdi
+21,autres,2023-01-15,boulogne-billancourt,"si, data management, data quality, méthodologie, outils",55000.0,60000.0,michael page,cdi
+24,business analyst,2022-12-17,suresnes,"business intelligence, crm, intelligence artificielle, système, réseau",70000.0,100000.0,selescope,
+25,business analyst,2022-12-27,suresnes,"intelligence artificielle, business intelligence, crm, système, réseau",70000.0,100000.0,selescope,
+28,business analyst,2013-01-14,rueil malmaison,"business intelligence, marketing, intelligence artificielle",35000.0,45000.0,fed it,cdi
+38,data scientist,2022-12-17,paris,"machine learning, méthodologie, agile",45000.0,70000.0,key consulting,cdi
+43,business analyst,2022-12-29,paris,"recette, si, big data, intelligence artificielle",50000.0,80000.0,mr search,cdi
 53,chef de projet,2022-12-25,paris,agile,30000.0,60000.0,nexton consulting,cdi
-65,data analyst,2022-12-31,maisons alfort,support sql data management business objects t-sql,45000.0,50000.0,fed it,cdd
-67,data analyst,2022-12-18,paris,data management business intelligence bases de données,60000.0,62000.0,fed it,cdi
-74,data scientist,2022-12-18,rueil malmaison,marketing data management support,60000.0,65000.0,fed it,cdi
-76,consultant,2023-01-13,paris,big data oracle cloud sap python,60000.0,70000.0,selescope,
-79,chef de projet,2023-01-10,gennevilliers,marketing outils digital ux mobile,60000.0,70000.0,hays france,cdi
-95,engineer,2013-01-14,paris,sécurité securité réseaux lan support,45000.0,60000.0,uniware global services,cdi
-97,engineer,2013-01-14,neuilly sur seine,devops jenkins outils linux infrastructure,42000.0,60000.0,uniware global services,cdi
-98,engineer,2013-01-14,neuilly sur seine,support vmware python javascript securité,40000.0,55000.0,uniware global services,cdi
-101,autres,2023-01-08,lisses,support communication big data cloud hadoop,57000.0,62000.0,fed it,cdi
-102,engineer,2013-01-14,neuilly sur seine,vmware support windows microsoft système,40000.0,55000.0,uniware global services,cdi
-104,engineer,2013-01-14,paris,cloud saas paas iaas infrastructure,40000.0,60000.0,uniware global services,cdi
-108,engineer,2013-01-14,paris,windows unix cft réseaux outils,40000.0,60000.0,uniware global services,cdi
-109,engineer,2013-01-14,paris,réseau cisco réseaux sécurité securité,40000.0,60000.0,uniware global services,cdi
-120,developer,2022-12-19,paris 9ème (75),vba web langage t-sql sql,30000.0,50000.0,synchrone,cdi
-125,engineer,2023-01-12,paris,middleware support infrastructure optimisation python,45000.0,60000.0,uniware global services,cdi
-126,architect,2023-01-12,paris,infrastructure support si système,40000.0,60000.0,uniware global services,cdi
-127,engineer,2023-01-12,paris,cloud support python paas securité,38000.0,56000.0,uniware global services,cdi
-139,architect,2013-01-14,paris,poste de travail microsoft support cloud infrastructure,50000.0,70000.0,uniware global services,cdi
-140,engineer,2023-01-12,paris,cloud securité devops sécurité si,50000.0,60000.0,uniware global services,cdi
-141,engineer,2023-01-12,paris,réseaux sécurité securité infrastructure wan,38000.0,55000.0,uniware global services,cdi
-144,engineer,2023-01-12,paris,linux unix windows hp infrastructure,38000.0,55000.0,uniware global services,cdi
-147,engineer,2022-12-26,paris,devops outils linux infrastructure jenkins,40000.0,60000.0,uniware global services,cdi
-149,engineer,2013-01-14,neuilly-sur-seine,cloud devops sécurité securité sql server,45000.0,60000.0,uniware global services,cdi
-153,developer,2022-12-25,paris 09 (75),java j2ee web jboss sécurité,45000.0,65000.0,synchrone,cdi
-156,engineer,2013-01-14,neuilly sur seine,cloud web devops python infrastructure,40000.0,60000.0,uniware global services,cdi
-158,developer,2022-12-25,paris 09 (75),angularjs agile web framework outils,30000.0,50000.0,synchrone,cdi
-163,expert,2013-01-14,paris,middleware weblogic unix support tomcat,40000.0,60000.0,uniware global services,cdi
-174,engineer,2023-01-12,paris,linux unix système infrastructure support,38000.0,55000.0,uniware global services,cdi
-180,autres,2022-12-18,paris,web spring si sécurité digital,65000.0,70000.0,mr search,cdi
-208,engineer,2022-12-18,nanterre,système windows microsoft cloud maintenance,45000.0,55000.0,experteam,cdi
-228,data scientist,2022-12-30,neuilly sur seine,nosql unix java machine learning linux,38000.0,50000.0,beezen,cdi
+65,data analyst,2022-12-31,maisons alfort,"support, sql, data management, business objects, t-sql",45000.0,50000.0,fed it,cdd
+67,data analyst,2022-12-18,paris,"data management, business intelligence, bases de données",60000.0,62000.0,fed it,cdi
+74,data scientist,2022-12-18,rueil malmaison,"marketing, data management, support",60000.0,65000.0,fed it,cdi
+76,consultant,2023-01-13,paris,"big data, oracle, cloud, sap, python",60000.0,70000.0,selescope,
+79,chef de projet,2023-01-10,gennevilliers,"marketing, outils, digital, ux, mobile",60000.0,70000.0,hays france,cdi
+95,engineer,2013-01-14,paris,"sécurité, securité, réseaux, lan, support",45000.0,60000.0,uniware global services,cdi
+97,engineer,2013-01-14,neuilly sur seine,"devops, jenkins, outils, linux, infrastructure",42000.0,60000.0,uniware global services,cdi
+98,engineer,2013-01-14,neuilly sur seine,"support, vmware, python, javascript, securité",40000.0,55000.0,uniware global services,cdi
+101,autres,2023-01-08,lisses,"support, communication, big data, cloud, hadoop",57000.0,62000.0,fed it,cdi
+102,engineer,2013-01-14,neuilly sur seine,"vmware, support, windows, microsoft, système",40000.0,55000.0,uniware global services,cdi
+104,engineer,2013-01-14,paris,"cloud, saas, paas, iaas, infrastructure",40000.0,60000.0,uniware global services,cdi
+108,engineer,2013-01-14,paris,"windows, unix, cft, réseaux, outils",40000.0,60000.0,uniware global services,cdi
+109,engineer,2013-01-14,paris,"réseau, cisco, réseaux, sécurité, securité",40000.0,60000.0,uniware global services,cdi
+120,developer,2022-12-19,paris 9ème (75),"vba, web, langage, t-sql, sql",30000.0,50000.0,synchrone,cdi
+125,engineer,2023-01-12,paris,"middleware, support, infrastructure, optimisation, python",45000.0,60000.0,uniware global services,cdi
+126,architect,2023-01-12,paris,"infrastructure, support, si, système",40000.0,60000.0,uniware global services,cdi
+127,engineer,2023-01-12,paris,"cloud, support, python, paas, securité",38000.0,56000.0,uniware global services,cdi
+139,architect,2013-01-14,paris,"poste de travail, microsoft, support, cloud, infrastructure",50000.0,70000.0,uniware global services,cdi
+140,engineer,2023-01-12,paris,"cloud, securité, devops, sécurité, si",50000.0,60000.0,uniware global services,cdi
+141,engineer,2023-01-12,paris,"réseaux, sécurité, securité, infrastructure, wan",38000.0,55000.0,uniware global services,cdi
+144,engineer,2023-01-12,paris,"linux, unix, windows, hp, infrastructure",38000.0,55000.0,uniware global services,cdi
+147,engineer,2022-12-26,paris,"devops, outils, linux, infrastructure, jenkins",40000.0,60000.0,uniware global services,cdi
+149,engineer,2013-01-14,neuilly-sur-seine,"cloud, devops, sécurité, securité, sql server",45000.0,60000.0,uniware global services,cdi
+153,developer,2022-12-25,paris 09 (75),"java, j2ee, web, jboss, sécurité",45000.0,65000.0,synchrone,cdi
+156,engineer,2013-01-14,neuilly sur seine,"cloud, web, devops, python, infrastructure",40000.0,60000.0,uniware global services,cdi
+158,developer,2022-12-25,paris 09 (75),"angularjs, agile, web, framework, outils",30000.0,50000.0,synchrone,cdi
+163,expert,2013-01-14,paris,"middleware, weblogic, unix, support, tomcat",40000.0,60000.0,uniware global services,cdi
+174,engineer,2023-01-12,paris,"linux, unix, système, infrastructure, support",38000.0,55000.0,uniware global services,cdi
+180,autres,2022-12-18,paris,"web, spring, si, sécurité, digital",65000.0,70000.0,mr search,cdi
+208,engineer,2022-12-18,nanterre,"système, windows, microsoft, cloud, maintenance",45000.0,55000.0,experteam,cdi
+228,data scientist,2022-12-30,neuilly sur seine,"nosql, unix, java, machine learning, linux",38000.0,50000.0,beezen,cdi
