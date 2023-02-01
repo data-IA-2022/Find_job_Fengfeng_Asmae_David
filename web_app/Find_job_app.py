@@ -4,6 +4,7 @@ import streamlit as st
 import plotly.express as px
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
+from PIL import Image
 
 @st.cache
 def load_data(data):
@@ -56,6 +57,8 @@ if page == "Home":
     st.title('Trouve ton job')
     st.subheader('Présentation')
     st.markdown(f"{line_pre}")
+    image = Image.open('images/recruit-crm-talent-process-ma.jpg')
+    st.image(image, caption='find a job is hard')
     st.subheader('How does it work')
     st.write('Notre application fonctionne grâce à un algorithme de regression qui determine votre salaire. Ces paramètres sont les suivants :')
     st.markdown(f"{line_exp}")
@@ -118,6 +121,7 @@ elif page == "Prediction":
             prediction_max = model_max.predict(df_submit)
             prediction_min = model_min.predict(df_submit)
             st.success(f"your salary range will be {np.rint(prediction_min)[0]} - {np.rint(prediction_max)[0]} $/year")
+            st.balloons()
             
     except Exception as e:
         st.error(e)
