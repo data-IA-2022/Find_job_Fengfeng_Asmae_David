@@ -2,18 +2,8 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import plotly.express as px
-import plotly.graph_objects as go
-from sklearn import set_config
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.impute import SimpleImputer
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
+import pickle
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import r2_score
-from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
-from sklearn import model_selection
 
 @st.cache
 def load_data(data):
@@ -48,22 +38,37 @@ df_occ_comp.rename(columns={0 : "occurrence"}, inplace = True)
 df_merge = df.drop('competences', axis=1)
 df_final = add_cols(df_merge, df_tf)
 
-# Title
 
-st.title('Trouve ton job')
+# Pages
 
-# Sidebar
+st.sidebar.title('Navigation')
+page = st.sidebar.radio("Choose your page", ["Home", "Information on the job market", "Prediction"])
 
-page = st.sidebar.selectbox("Choose your page", ["Information on data", "Prediction", "Page 3"]) 
+if page == "Home":
+    line_pre = """L'objectif de cette application est de vous fournir une prediction de votre salaire maximum et minimum en fonction de
+                divers paramètres que vous renseignerez"""
+    line_exp = """
+                    - Votre :red[**poste**]
+                    - Votre :red[**entreprise**]
+                    - Le type votre :red[**contrat**]
+                    - Le liste de vos :red[**compétences**]
+                """
+    st.title('Trouve ton job')
+    st.subheader('Présentation')
+    st.markdown(f"{line_pre}")
+    st.subheader('How does it work')
+    st.write('Notre application fonctionne grâce à un algorithme de regression qui determine votre salaire. Ces paramètres sont les suivants :')
+    st.markdown(f"{line_exp}")
 
-if page == "Information on data":
+if page == "Information on the job market":
+    st.title('Information on the job market')
     st.sidebar.title('Settings')
     check_box = st.sidebar.checkbox(label='Display dataset')
     # Display details of page 1
     if check_box:
         st.dataframe(df)
     
-    select_chart = st.sidebar.selectbox(label="Select a type of data", options=['Salaires', 'Competences'])
+    select_chart = st.sidebar.radio(label="Select a type of data", options=['Salaires', 'Competences'])
 
     if select_chart == 'Salaires':
         try:
@@ -91,51 +96,28 @@ elif page == "Prediction":
     # Display details of page 2
     st.title('Prediction')
     try:
-        df = data.copy()
-        df = df.drop(['Unnamed: 0', 'Date de publication', 'lieu'], axis=1)
+        st.subheader('Predict your salary range')
+        #import model 
+        pickle_max = open("../RFR_max.pkl", "rb")
+        model_max = pickle.load(pickle_max)
         
-        y_max = df['salaire_maximum']
-        y_min = df['salaire_minimum']
-        X_cat = df.select_dtypes(include=[object])
-        
-        pipe_cat = Pipeline(
-            steps=[
-                ('pipe_imp', SimpleImputer(strategy='most_frequent')),
-                ('pipe_enc', OneHotEncoder(sparse=False))
-            ]
-        )
-        tf_cat = ColumnTransformer(
-            transformers=[
-                ('tf_cat', pipe_cat, ['Intitulé du poste', 'Nom de la société', 'Type de contrat']),
-                ('tf_comp', CountVectorizer(), 'competences')
-            ]
-        )
-
-        RFR_pipe_max = Pipeline(
-            steps=[
-                ('transformation', tf_cat),
-                ('model', RandomForestRegressor(n_estimators=26, random_state=66, criterion='absolute_error'))
-            ]
-        )
-
-        RFR_pipe_min = Pipeline(
-            steps=[
-                ('transformation', tf_cat),
-                ('model', RandomForestRegressor(n_estimators=9, random_state=40, criterion='friedman_mse'))
-            ]
-        )
-        
-        X = X_cat
-        X_train, X_test, y_train, y_test = train_test_split(X, y_max, test_size=0.25, random_state=10)
-        
+        pickle_min = open("../RFR_min.pkl", "rb")
+        model_min = pickle.load(pickle_min)
         # Prediction Salaire max
-        RFR_pipe_max.fit(X_train, y_train)
-        y_max_pred = RFR_pipe_max.predict(X_test)
         poste = st.text_input('Saisie ton poste : ')
-        conpanie = st.text_input('Saisie ton entreprise : ')
-        contract = st.text_input('Saisie ton type de contract : ')
+        companie= st.text_input('Saisie ton entreprise : ')
+        contract = st.text_input('Saisie ton type de contrat : ')
         competences = st.text_input('Saisie la liste de tes compétences : ')
-        st.write(RFR_pipe_max.predict([[poste, conpanie, contract, competences]]))
+        df_submit = pd.DataFrame(
+            data=[[poste,companie,contract,competences]], 
+            columns=['Intitulé du poste', 'Nom de la société', 'Type de contrat', 'competences']
+        )
         
+        submit_max = st.button('Predict')
+        if submit_max:
+            prediction_max = model_max.predict(df_submit)
+            prediction_min = model_min.predict(df_submit)
+            st.success(f"your salary range will be {np.rint(prediction_min)[0]} - {np.rint(prediction_max)[0]} $/year")
+            
     except Exception as e:
-        print(e)
+        st.error(e)
