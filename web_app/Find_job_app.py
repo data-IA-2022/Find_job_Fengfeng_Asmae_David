@@ -3,6 +3,7 @@ import numpy as np
 import streamlit as st
 import plotly.express as px
 import pickle
+import datetime as dt
 from sklearn.feature_extraction.text import CountVectorizer
 from PIL import Image
 
@@ -51,7 +52,7 @@ postes, companies, contrats, competences = get_inputs(df_final)
 # Pages
 
 st.sidebar.title('Navigation')
-page = st.sidebar.radio("Choisis une page", ["Home", "Information sur le marché du travail", "Prédiction"])
+page = st.sidebar.radio("Choisis une page", ["Home", "Information sur le marché du travail", "Prédiction", "Partager votre offre d'emploi"])
 
 if page == "Home":
     line_pre = """L'objectif de cette application est de vous fournir une prediction sur votre salaire maximum et minimum en fonction de
@@ -135,3 +136,26 @@ elif page == "Prédiction":
             
     except Exception as e:
         st.error(e)
+elif page == "Partager votre offre d'emploi":
+    try:
+        st.title("Améliorer notre service en fornissant une offre d'emploi")
+        poste = st.text_input('Saisir un intitulé de poste').lower()
+        date = st.text_input("Saisir la date de publication de l'offre (AAAA-MM-JJ)") # attention au format de la date
+        lieu = st.text_input('Saisir la localisation').lower()
+        competences = st.text_input('Saisir la liste des competences').lower()
+        salaire_min = st.text_input('Saisir le salaire minimum')
+        salaire_max = st.text_input('Saisir le salaire maximum')
+        companie = st.text_input("Saisir le nom de l'entreprise").lower()
+        contrat = st.text_input('Saisir le type de contrat').lower()
+        
+        submit = st.button('Submit')
+        if submit:
+            df = data.copy()
+            df = df.drop('Unnamed: 0', axis=1)
+            date = date.split('-')
+            date = dt.date(int(date[0]), int(date[1]), int(date[2]))
+            df_add = pd.DataFrame(data=[[poste, date, lieu, competences, salaire_min, salaire_max, companie, contrat]], columns=df.columns)
+            df_final = df.append(df_add, ignore_index=True)
+            df_final.to_csv('new_data.csv') # dataset comprenant des nouvelles données a nettoyés
+    except Exception as e:
+        print(e)
