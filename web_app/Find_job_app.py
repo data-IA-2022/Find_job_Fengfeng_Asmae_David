@@ -158,4 +158,4 @@ elif page == "Partager votre offre d'emploi":
             df_final = df.append(df_add, ignore_index=True)
             df_final.to_csv('new_data.csv') # dataset comprenant des nouvelles données a nettoyés
     except Exception as e:
-        print(e)
+        st.error(e)
