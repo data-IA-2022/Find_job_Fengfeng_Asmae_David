@@ -157,5 +157,6 @@ elif page == "Partager votre offre d'emploi":
             df_add = pd.DataFrame(data=[[poste, date, lieu, competences, salaire_min, salaire_max, companie, contrat]], columns=df.columns)
             df_final = df.append(df_add, ignore_index=True)
             df_final.to_csv('new_data.csv') # dataset comprenant des nouvelles données a nettoyés
+            st.success("les nouvelles données ont été sauvegardées")
     except Exception as e:
         st.error(e)
