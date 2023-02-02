@@ -10,6 +10,7 @@ from PIL import Image
 def load_data(data):
     df = data.copy()
     df = df.drop('Unnamed: 0', axis=1)
+    df['Type de contrat'] = df['Type de contrat'].fillna('cdi')
     cat_cols = df.select_dtypes([object]).columns
     num_cols = df.select_dtypes(exclude="object").columns
     return df, cat_cols, num_cols
@@ -24,6 +25,12 @@ def add_cols(df1, df2):
     for col in df1.columns:
         df2[col] = df1[col]
     return df2
+def get_inputs(df):
+    postes = df['Intitulé du poste'].unique()
+    companies = df['Nom de la société'].unique()
+    contrats = df['Type de contrat'].unique()
+    competences = df[df.columns[0:-7]].columns
+    return postes, companies, contrats, competences
 
 data = pd.read_csv('../clean_data.csv', sep=',')
 df, cat_cols, num_cols = load_data(data)
@@ -39,51 +46,52 @@ df_occ_comp.rename(columns={0 : "occurrence"}, inplace = True)
 df_merge = df.drop('competences', axis=1)
 df_final = add_cols(df_merge, df_tf)
 
+postes, companies, contrats, competences = get_inputs(df_final)
 
 # Pages
 
 st.sidebar.title('Navigation')
-page = st.sidebar.radio("Choose your page", ["Home", "Information on the job market", "Prediction"])
+page = st.sidebar.radio("Choisis une page", ["Home", "Information sur le marché du travail", "Prédiction"])
 
 if page == "Home":
-    line_pre = """L'objectif de cette application est de vous fournir une prediction de votre salaire maximum et minimum en fonction de
+    line_pre = """L'objectif de cette application est de vous fournir une prediction sur votre salaire maximum et minimum en fonction de
                 divers paramètres que vous renseignerez"""
     line_exp = """
                     - Votre :red[**poste**]
                     - Votre :red[**entreprise**]
                     - Le type votre :red[**contrat**]
-                    - Le liste de vos :red[**compétences**]
+                    - La  liste de vos :red[**compétences**]
                 """
     st.title('Trouve ton job')
     st.subheader('Présentation')
     st.markdown(f"{line_pre}")
     image = Image.open('images/recruit-crm-talent-process-ma.jpg')
-    st.image(image, caption='find a job is hard')
-    st.subheader('How does it work')
+    st.image(image)
+    st.subheader('Comment peut-on prédire ton salaire')
     st.write('Notre application fonctionne grâce à un algorithme de regression qui determine votre salaire. Ces paramètres sont les suivants :')
     st.markdown(f"{line_exp}")
 
-if page == "Information on the job market":
-    st.title('Information on the job market')
-    st.sidebar.title('Settings')
-    check_box = st.sidebar.checkbox(label='Display dataset')
+if page == "Information sur le marché du travail":
+    st.title('Information sur le marché du travail')
+    st.sidebar.title('Paramètres')
+    check_box = st.sidebar.checkbox(label='Voir les données')
     # Display details of page 1
     if check_box:
         st.dataframe(df)
     
-    select_chart = st.sidebar.radio(label="Select a type of data", options=['Salaires', 'Competences'])
+    select_chart = st.sidebar.radio(label="Selectionner un paramètre", options=['Salaires', 'Compétences'])
 
     if select_chart == 'Salaires':
         try:
             x_values = st.sidebar.selectbox("X axis", options=['Intitulé du poste', 'lieu', 'Nom de la société'])
             y_values = st.sidebar.selectbox("Y axis", options=['salaire_maximum', 'salaire_minimum'])
-            plot = px.bar(df, x_values, y_values)
+            plot = px.bar(df, x_values, y_values, title=f"Masse salariale en fonction de la colonne '{x_values}'")
             st.plotly_chart(plot)
         except Exception as e:
             print(e)
-    if select_chart == 'Competences':
+    if select_chart == 'Compétences':
         try:
-            check_box = st.sidebar.checkbox(label="Display Most in demand skills")
+            check_box = st.sidebar.checkbox(label="Les compétences les plus demandées")
             if check_box:
                 plot = px.bar(df_occ_comp, x="competences", y='occurrence', title="Most in demand skills")
                 st.plotly_chart(plot) 
@@ -95,11 +103,11 @@ if page == "Information on the job market":
         except Exception as e:
             print(e)
         
-elif page == "Prediction":
+elif page == "Prédiction":
     # Display details of page 2
-    st.title('Prediction')
+    st.title('Prédiction')
     try:
-        st.subheader('Predict your salary range')
+        st.subheader('Prédire votre tranche de salaire')
         #import model 
         pickle_max = open("../RFR_max.pkl", "rb")
         model_max = pickle.load(pickle_max)
@@ -107,12 +115,14 @@ elif page == "Prediction":
         pickle_min = open("../RFR_min.pkl", "rb")
         model_min = pickle.load(pickle_min)
         # Prediction Salaire max
-        poste = st.text_input('Saisie ton poste : ')
-        companie= st.text_input('Saisie ton entreprise : ')
-        contract = st.text_input('Saisie ton type de contrat : ')
-        competences = st.text_input('Saisie la liste de tes compétences : ')
+        poste = st.selectbox('Choisis ton poste', postes)
+        companie = st.selectbox('Choisis ton entreprise', companies)
+        contrat = st.selectbox('Choisis ton contrat', contrats)
+        competence = st.multiselect('Choisis tes competences', competences)
+        
+        
         df_submit = pd.DataFrame(
-            data=[[poste,companie,contract,competences]], 
+            data=[[poste,companie,contrat,', '.join(competence)]], 
             columns=['Intitulé du poste', 'Nom de la société', 'Type de contrat', 'competences']
         )
         
@@ -120,7 +130,7 @@ elif page == "Prediction":
         if submit_max:
             prediction_max = model_max.predict(df_submit)
             prediction_min = model_min.predict(df_submit)
-            st.success(f"your salary range will be {np.rint(prediction_min)[0]} - {np.rint(prediction_max)[0]} $/year")
+            st.success(f"Votre salaire se situera entre {np.rint(prediction_min)[0]} - {np.rint(prediction_max)[0]} €/an")
             st.balloons()
             
     except Exception as e:
