@@ -2,6 +2,8 @@
 
 [lien colab](https://colab.research.google.com/drive/1-rjmG619mRji9JbZW4cwM7GEeCMlJ005?usp=sharing)
 
+[lien trello](https://trello.com/b/zctvnl4O/planning)
+
 ## Choix effectués
 - Imputation target : données insuffisantes donc imputation par la médianne
 - certaines approximations dans le formatage des colonnes notamment pour "Intitulé du poste"
