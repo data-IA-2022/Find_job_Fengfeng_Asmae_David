@@ -10,6 +10,7 @@
 - implémentation d'un pipeline pour l'entraînement du modèle de regression
 
 ## Description des fichiers : 
+- requirements.txt : listes des packages (conda env)
 - clean_data.csv : dataset nettoyé utilisé pour l'entraînement du modèle de machine learning
 - data.json : dataset brute
 - Find_job_Cleaning : Nettoyage du dataset brute
