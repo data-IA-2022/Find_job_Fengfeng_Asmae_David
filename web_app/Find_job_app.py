@@ -26,6 +26,7 @@ def add_cols(df1, df2):
     for col in df1.columns:
         df2[col] = df1[col]
     return df2
+
 def get_inputs(df):
     postes = df['Intitulé du poste'].unique()
     companies = df['Nom de la société'].unique()
